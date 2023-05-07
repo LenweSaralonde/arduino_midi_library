@@ -78,6 +78,11 @@ public:
 		mSerial.write(value);
 	};
 
+	unsigned availableForWrite()
+	{
+        return mSerial.availableForWrite();
+	};
+
 	void endTransmission()
 	{
 	};
